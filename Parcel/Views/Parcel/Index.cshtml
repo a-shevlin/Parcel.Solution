@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Package Checker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    @using Parcel.Models;
+
+    <h1>Package Checker</h1>
+    <p>Your packages:</p>
+      @foreach (ParcelCheck item in Model)
+      {
+      <ul>
+        <li>@item.Volume cubic inches</li>
+        <li>@item.Length in. x @item.Width in. x @item.Height in.</li>
+        <li>@item.Weight lbs</li>
+        <li>$ @item.Cost</li>
+      </ul>
+      }
+    
+    
+    <a href="/parcel/new">Check another package.</a>
+    <br>
+    <a href="/">Back to homepage.</a>
+  </body>
+</html>

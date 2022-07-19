@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Parcels.Controllers
+namespace Parcel.Controllers
 {
     public class HomeController : Controller
     {

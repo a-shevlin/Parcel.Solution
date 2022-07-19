@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parcel Checker!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <form action="/parcel" method="post">
+      <h1>Add a new package!</h1>
+      <ul>
+        <li>
+          <label for="length">Length</label>
+          <input id="length" name="length" type="text" required>
+        </li>
+
+        <li>
+          <label for="width">Width</label>
+          <input id="width" name="width" type="text" required>
+        </li>
+        
+        <li>
+          <label for="height">Height</label>
+          <input id="height" name="height" type="text" required>
+        </li>
+
+        <li>
+          <label for="weight">Weight</label>
+          <input id="weight" name="weight" type="text" required>
+        </li>
+      </ul>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
